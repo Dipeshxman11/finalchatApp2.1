@@ -10,7 +10,7 @@ async function loginUser(e){
 
         document.getElementById('emailid').value='';
         document.getElementById('passid').value='';
-        const res= await axios.post('http://localhost:3000/user/login',loginUser);
+        const res= await axios.post('http://13.41.56.236:3000/user/login',loginUser);
         if(res.status===200){
             localStorage.setItem('token',res.data.token)
             alert(res.data.message);

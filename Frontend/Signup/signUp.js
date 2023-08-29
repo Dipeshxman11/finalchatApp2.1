@@ -13,7 +13,7 @@ async function createUser(e){
          document.getElementById('emailid').value='';
          document.getElementById('phoneid').value='';
          document.getElementById('passid').value='';
-     const res= await axios.post('http://localhost:3000/user/signup',user);
+     const res= await axios.post('http://13.41.56.236:3000/user/signup',user);
      console.log(res);
      if(res.status===200){
          alert(res.data.message)
